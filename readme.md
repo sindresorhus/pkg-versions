@@ -1,4 +1,4 @@
-# package-versions [![Build Status](https://travis-ci.org/sindresorhus/package-versions.svg?branch=master)](https://travis-ci.org/sindresorhus/package-versions)
+# pkg-versions [![Build Status](https://travis-ci.org/sindresorhus/pkg-versions.svg?branch=master)](https://travis-ci.org/sindresorhus/pkg-versions)
 
 > Get the version numbers of a package from the npm registry
 
@@ -6,16 +6,16 @@
 ## Install
 
 ```
-$ npm install --save package-versions
+$ npm install --save pkg-versions
 ```
 
 
 ## Usage
 
 ```js
-const packageVersions = require('package-versions');
+const pkgVersions = require('pkg-versions');
 
-packageVersions('ava').then(versions => {
+pkgVersions('ava').then(versions => {
 	console.log(versions);
 	//=> {'0.0.3', '0.0.4', ...}
 });
@@ -24,7 +24,7 @@ packageVersions('ava').then(versions => {
 
 ## API
 
-### packageVersions(name)
+### pkgVersions(name)
 
 Returns a promise for a [`Set`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set) of versions.
 
