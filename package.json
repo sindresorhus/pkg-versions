@@ -1,0 +1,39 @@
+{
+  "name": "pkg-versions",
+  "version": "0.1.0",
+  "description": "Get the version numbers of a package from the npm registry",
+  "license": "MIT",
+  "repository": "sindresorhus/pkg-versions",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "versions",
+    "npm",
+    "registry",
+    "package",
+    "pkg",
+    "package.json",
+    "json",
+    "module",
+    "set"
+  ],
+  "dependencies": {
+    "package-json": "^2.3.2"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
