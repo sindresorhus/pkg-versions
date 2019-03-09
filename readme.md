@@ -28,6 +28,12 @@ pkgVersions('ava').then(versions => {
 
 Returns a promise for a [`Set`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set) of versions.
 
+#### name
+
+Type: `string`
+
+The name of the package to look up versions for.
+
 
 ## Related
 
