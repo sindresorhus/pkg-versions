@@ -1,5 +1,11 @@
 'use strict';
+
 const packageJson = require('package-json');
 
-module.exports = name => packageJson(name, {allVersions: true})
-	.then(data => new Set(Object.keys(data.versions)));
+const pkgVersions = async name => {
+	const {versions} = await packageJson(name, {allVersions: true});
+	return new Set(Object.keys(versions));
+};
+
+module.exports = pkgVersions;
+module.exports.default = pkgVersions;

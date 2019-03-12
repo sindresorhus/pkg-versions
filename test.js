@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from '.';
+import pkgVersions from '.';
 
-test(async t => {
-	const versions = await m('ava');
+test('pkgVersions', async t => {
+	const versions = await pkgVersions('ava');
 	t.true(versions.has('0.15.0'));
 });
