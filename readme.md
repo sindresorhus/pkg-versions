@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save pkg-versions
+$ npm install pkg-versions
 ```
 
 
@@ -15,20 +15,20 @@ $ npm install --save pkg-versions
 ```js
 const pkgVersions = require('pkg-versions');
 
-pkgVersions('ava').then(versions => {
-	console.log(versions);
-	//=> {'0.0.3', '0.0.4', ...}
-});
+(async () => {
+	console.log(await pkgVersions('ava'));
+	//=> {'0.0.3', '0.0.4', …}
+})();
 ```
 
 
 ## API
 
-### pkgVersions(name)
+### pkgVersions(packageName)
 
-Returns a promise for a [`Set`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set) of versions.
+Returns a `Promise<Set<string>>` with the versions.
 
-#### name
+#### packageName
 
 Type: `string`
 
