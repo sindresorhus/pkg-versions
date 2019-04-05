@@ -1,4 +1,4 @@
-import {expectType} from 'tsd-check';
-import pkgVersions from '.';
+import {expectType} from 'tsd';
+import pkgVersions = require('.');
 
 expectType<Promise<Set<string>>>(pkgVersions('ava'));

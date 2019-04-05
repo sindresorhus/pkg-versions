@@ -7,4 +7,5 @@ const pkgVersions = async packageName => {
 };
 
 module.exports = pkgVersions;
+// TODO: Remove this for the next major release
 module.exports.default = pkgVersions;
