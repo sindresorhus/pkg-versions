@@ -1,4 +1,4 @@
-# pkg-versions [![Build Status](https://travis-ci.org/sindresorhus/pkg-versions.svg?branch=master)](https://travis-ci.org/sindresorhus/pkg-versions)
+# pkg-versions
 
 > Get the version numbers of a package from the npm registry
 
