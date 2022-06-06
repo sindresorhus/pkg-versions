@@ -4,13 +4,16 @@
 	"description": "Get the version numbers of a package from the npm registry",
 	"license": "MIT",
 	"repository": "sindresorhus/pkg-versions",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=14.16"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -31,11 +34,11 @@
 		"module"
 	],
 	"dependencies": {
-		"package-json": "^6.3.0"
+		"package-json": "^8.0.0"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"ava": "^4.3.0",
+		"tsd": "^0.20.0",
+		"xo": "^0.49.0"
 	}
 }

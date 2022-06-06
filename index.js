@@ -1,11 +1,6 @@
-'use strict';
-const packageJson = require('package-json');
+import packageJson from 'package-json';
 
-const pkgVersions = async packageName => {
+export default async function packageVersions(packageName) {
 	const {versions} = await packageJson(packageName, {allVersions: true});
 	return new Set(Object.keys(versions));
-};
-
-module.exports = pkgVersions;
-// TODO: Remove this for the next major release
-module.exports.default = pkgVersions;
+}

@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import pkgVersions = require('.');
+import packageVersions from './index.js';
 
-expectType<Promise<Set<string>>>(pkgVersions('ava'));
+expectType<Promise<Set<string>>>(packageVersions('ava'));
